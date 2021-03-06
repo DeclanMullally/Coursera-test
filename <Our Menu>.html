@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+   
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+
+}
+h1 {
+  margin-bottom: 15px;
+}
+
+.menu {
+    display:flex;
+}
+
+.menu-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: grey;
+    border: 3px solid black;
+    margin: 1rem;
+}
+.title {
+    margin-left: auto;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 0.5rem;
+}
+.title_chicken {
+    background-color: cadetblue;
+}
+.title_beef {
+    background-color: burlywood;
+}
+.title_sushi {
+    background-color: cyan;
+
+}
+.text {
+    padding: 1rem;
+}
+
+/* Simple Responsive Framework. */
+
+
+/********** Large devices only **********/
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  }
+
+</style>
+</head>
+<body>
+<h1 style="color:rgb(0, 14, 14);font-size: 60px; text-align: center;">Menu</h1>
+
+<div class="menu">
+    <div class="menu-box">
+        <div class="title title_chicken">Chicken</div>
+        <div class="text">curry blalblblblblbalbbllba</div>
+    </div>
+    <div class="menu-box">
+        <div class="title title_beef">Beef</div>
+        <div class="text">curry blalblblblblbalbbllba</div>
+    </div>
+    <div class="menu-box">
+        <div class="title title_sushi">Sushi</div>
+        <div class="text">curry blalblblblblbalbbllba</div>
+    </div>
+
+</div>
